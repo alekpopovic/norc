@@ -30,7 +30,7 @@ Norc.start
 
 This implementation provides a complete cron job scheduler with Redis persistence featuring:
 
-# Key Features:
+## Key Features:
 
 - Job Management: Add, remove, enable/disable jobs with unique IDs
 - Redis Persistence: All job data persists across application restarts
@@ -39,13 +39,13 @@ This implementation provides a complete cron job scheduler with Redis persistenc
 - Thread-Safe Execution: Runs in background thread, checking jobs every minute
 - Logging: Built-in logging for job execution and scheduler events
 
-# Cron Expression Format:
+## Cron Expression Format:
 
 - * * * * * = minute hour day month weekday
 - Supports: wildcards (*), specific values (5), comma-separated lists (1,3,5)
 - Example: 0 2 * * * runs daily at 2:00 AM
 
-# Dependencies:
+## Dependencies:
 
 - logger
 - redis
